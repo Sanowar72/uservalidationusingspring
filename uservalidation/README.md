@@ -1,21 +1,14 @@
 <h1 align="center"> 
-Restaurant_Management_GeeksterAssignment</h1>
+User Validation GeeksterAssignment</h1>
 
-* This repository contains the code for a Restaurant Management System. The system includes functionality for managing restaurants, as well as for user authentication and authorization.
+* This repository contains the code for a User Validation GeeksterAssignment. 
 
-* The restaurant management system is a web-based application that uses Spring Boot. It 
+* The User Validation management system is a web-based application that uses Spring Boot. It 
 helps streamline restaurant data management and provides an easy-to-use interface for 
 restaurant managers to manage food item details and other information. The application 
 also allows restaurants to view and update their personal details
 
-* Implemented CRUD operations with data validation, MySQL database configuration, 
-Swagger integration, authentication and established table relationships, authentication 
-using “MD-5” algorithm
 
-* Tech stack used: Spring Boot, Hibernate, MySQL, OOPs, Postman, Swagger, and Java
->### Prerequisites
-* MySql
- * SpringBoot
 
 
 * Java
@@ -44,94 +37,20 @@ The API endpoints will be available at http://localhost:8080.
 #### Endpoints
 Restaurant-controller
 * GET
-/restaurants/{id}
+/getUser/{id}
 
 * PUT
-/restaurants/{id}
+/getUser/{id}
 
 * DELETE
-/restaurants/{id}
+/getUser/{id}
 
 * GET
-/restaurants
+/getAllUser
 
 * POST
-/restaurants
+  /addUser
 
-Restaurant-management-controller
 
-* PUT /restaurantmanagement/restaurantid/{restaurantEmployeeRecordId}
 
-* GET /restaurantmanagement/restaurantid/{restaurantid}
 
-User-controller
-
-* POST
-/user/signup
-
-* POST
-/user/signin
-
-* GET
-/user/food
-
->### Schemas
-Food
-
-* id
-
-* foodName	
-
-* foodPrice
-
-* Restaurant	Restaurant
-
-Restaurant
-
-* RestaurantId	
-
-* RestaurantName
-
-* RestaurantAddress
-
-* Menu
-
-* PersonalDetails	
-
-RestaurantManagement
-
-* RestaurantManagementRecordId
-
-* RestaurantDescription
-
-* RestaurantHeadChefName
-
-* RestaurantHeadChefSalary
-
-* RestaurantStaffsNumber
-
-* RestaurantStaffTotalExpense
-
-* Restaurant	Restaurant
-
-SignUpInput
-
-* userFirstName	
-
-SignUpOutput
-
-* status
-
-* message
-
-SignInInput
-
-* userEmail	
-* serPassword
-
-SignInOutput
-
-* status	
-* token	
->## Project Summary
-This application has a well-defined architecture with clear separation of concerns. Each layer has its own set of responsibilities and communicates with other layers in a decoupled way. This makes the application modular and easy to maintain.
